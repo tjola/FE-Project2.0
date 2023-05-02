@@ -49,7 +49,6 @@
 .background-gray .lower-menu {
   display: flex;
   justify-content: space-around;
-  height: 62px;
   align-items: center;
 }
 .background-gray .upper-menu .page-titles li,
@@ -59,32 +58,47 @@
   max-width: 177px;
   height: 3px;
 }
-.container-grid {
+/* .container-grid {
   display: grid;
+  gap: 20px;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  gap: 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
   height: 100%;
 }
 
 #item-0 {
   grid-row-start: 1;
   grid-column-start: 1;
+
   grid-row-end: 3;
-  grid-column-end: 2;
+  grid-column-end: 3;
 }
 #item-1 {
   grid-row-start: 1;
-  grid-column-start: 2;
+  grid-column-start: 3;
+
   grid-row-end: 2;
-  grid-column-end: 3;
+  grid-column-end: 4;
 }
 #item-2 {
   grid-row-start: 2;
-  grid-column-start: 2;                                                                                                                   
+  grid-column-start: 3;
+
   grid-row-end: 3;
-  grid-column-end: 3;
+  grid-column-end: 4;
 }
+#item-0 img,
+#item-1 img,
+#item-2 img {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  object-fit: cover;
+}
+*/
 .upper-menu .page-titles .page-titles-list li.wholesale-pros-only {
   color: #407ec9;
   font-family: "Proxima Nova Medium";
@@ -99,6 +113,11 @@
   max-width: 177px;
   border-top: 3px solid #407ec9;
 }
+.upper-menu .page-titles li {
+  display: inline-block;
+  width: 177px;
+}
+
 .upper-menu .page-titles .page-titles-list li.retail {
   height: 17px;
   max-width: 177px;
@@ -110,7 +129,8 @@
   line-height: 17px;
   margin: auto;
   padding: 20px;
-}
+} 
+
 /*search bar*/
 header .upper-menu .search-input ::placeholder {
   height: 17px;
@@ -145,7 +165,33 @@ header .upper-menu .search-input ::placeholder {
   line-height: 17px;
   text-align: center;
 }
+.upper-menu .other-pages {
+  max-width: 339px;
+  width: 100%;
+  height: 19px;
+}
+.upper-menu .other-pages li {
+  height: 17px;
+  max-width: 110px;
+  width: 100%;
+  color: #282828;
+  font-family: "Proxima Nova Semibold";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 17px;
+}
 /*megamenu list*/
+header .lower-menu {
+  display: flex;
+  justify-content: space-around;
+}
+header .lower-menu .megamenu {
+  max-width: 1360px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
 nav ul.megamenu-list li {
   height: 17px;
   color: #575757;
@@ -157,10 +203,19 @@ nav ul.megamenu-list li {
   text-align: center;
   list-style-type: none;
   margin: auto;
+  max-width: 160px;
+  width: 100%;
+  text-transform: uppercase;
 }
-
+nav.main-navigation {
+  max-width: 1360px;
+  width: 100%;
+}
+img.painful-logo {
+  margin: 20px 0;
+}
 /*community grid*/
-.community-grid {
+/* .community-grid {
   display: flex;
   justify-content: center;
   gap: 14px;
@@ -218,9 +273,9 @@ img.community-img {
   line-height: 20px;
   text-align: center;
   border: none;
-}
+} */
 /*supplies grid*/
-.supplies-container {
+/* .supplies-container {
   width: 100%;
 }
 .supplies-grid {
@@ -266,11 +321,11 @@ img.community-img {
 }
 .description-supply {
   text-align: center;
-}
+} */
 /*======
 footer, contents
 =======*/
-html footer {
+/* html footer {
   bottom: 0;
   position: relative;
 }
@@ -310,7 +365,7 @@ footer .content .footer-logo {
   align-items: center;
 }
 /*upper footer*/
-footer .upper-footer ul .col-list-title {
+/* footer .upper-footer ul .col-list-title {
   height: 20px;
   max-width: 117px;
   width: 100%;
@@ -323,5 +378,4 @@ footer .upper-footer ul .col-list-title {
   text-align: left;
   list-style-type: none;
   text-transform: uppercase;
-}
-
+} */

@@ -58,47 +58,7 @@
   max-width: 177px;
   height: 3px;
 }
-/* .container-grid {
-  display: grid;
-  gap: 20px;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-  height: 100%;
-}
 
-#item-0 {
-  grid-row-start: 1;
-  grid-column-start: 1;
-
-  grid-row-end: 3;
-  grid-column-end: 3;
-}
-#item-1 {
-  grid-row-start: 1;
-  grid-column-start: 3;
-
-  grid-row-end: 2;
-  grid-column-end: 4;
-}
-#item-2 {
-  grid-row-start: 2;
-  grid-column-start: 3;
-
-  grid-row-end: 3;
-  grid-column-end: 4;
-}
-#item-0 img,
-#item-1 img,
-#item-2 img {
-  width: 100%;
-  height: 100%;
-  max-width: 1200px;
-  object-fit: cover;
-}
-*/
 .upper-menu .page-titles .page-titles-list li.wholesale-pros-only {
   color: #407ec9;
   font-family: "Proxima Nova Medium";
@@ -129,7 +89,7 @@
   line-height: 17px;
   margin: auto;
   padding: 20px;
-} 
+}
 
 /*search bar*/
 header .upper-menu .search-input ::placeholder {
@@ -192,6 +152,10 @@ header .lower-menu .megamenu {
   align-items: center;
   display: flex;
 }
+ul.megamenu-list {
+  display: flex;
+  justify-content: flex-end;
+}
 nav ul.megamenu-list li {
   height: 17px;
   color: #575757;
@@ -214,168 +178,3 @@ nav.main-navigation {
 img.painful-logo {
   margin: 20px 0;
 }
-/*community grid*/
-/* .community-grid {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.community-grid .community-card {
-  height: 419px;
-  max-width: 446px;
-  width: 100%;
-}
-img.community-img {
-  width: 100%;
-  max-width: 446px;
-}
-.community-grid .community-card .description {
-  height: 78px;
-  max-width: 403px;
-  color: #000000;
-  font-family: "Proxima Nova Bold", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 26px;
-  text-align: center;
-}
-.community-grid .community-card .date {
-  height: 26px;
-  max-width: 103px;
-  color: #000000;
-  font-family: ".SF NS Display";
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: 26px;
-  text-align: center;
-  margin: auto;
-  width: 100%;
-}
-.blog-post {
-  display: flex;
-  justify-content: center;
-}
-.blog-post .community-blogs-btn {
-  display: block;
-  align-items: center;
-  height: 50px;
-  max-width: 189px;
-  width: 100%;
-  background-color: #407ec9;
-  color: #ffffff;
-  font-family: "Proxima Nova Medium", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 20px;
-  text-align: center;
-  border: none;
-} */
-/*supplies grid*/
-/* .supplies-container {
-  width: 100%;
-}
-.supplies-grid {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: auto;
-  top: auto;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  max-width: 1260px;
-  gap: 10px;
-}
-.supply-title {
-  height: 54px;
-  max-width: 159px;
-  color: #575757;
-  font-family: "Proxima Nova Bold";
-  font-size: 22px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  line-height: 27px;
-  text-align: center;
-  margin-bottom: -20px;
-}
-.supply-card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.supply-card .shop-now {
-  width: 100%;
-  color: #ffffff;
-  font-family: "Proxima Nova Medium", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 20px;
-  text-align: center;
-  border: none;
-  height: 20px;
-}
-.description-supply {
-  text-align: center;
-} */
-/*======
-footer, contents
-=======*/
-/* html footer {
-  bottom: 0;
-  position: relative;
-}
-footer .upper-footer,
-footer .content {
-  display: flex;
-  justify-content: center;
-  height: 451px;
-  height: 100%;
-  width: 100%;
-  background-color: #407ec9;
-}
-footer .lower-footer {
-  max-height: 200px;
-  width: 100%;
-  background-color: #1a355c;
-  display: flex;
-  justify-content: center;
-  min-height: 190px;
-}
-footer .content .upper-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 20px;
-  max-width: 1260px;
-  width: 100%;
-}
-footer .content .footer-logo {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  border-radius: 100%;
-}
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/*upper footer*/
-/* footer .upper-footer ul .col-list-title {
-  height: 20px;
-  max-width: 117px;
-  width: 100%;
-  color: #ffffff;
-  font-family: "Proxima Nova Semibold";
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 20px;
-  text-align: left;
-  list-style-type: none;
-  text-transform: uppercase;
-} */

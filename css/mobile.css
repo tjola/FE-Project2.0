@@ -1,55 +1,97 @@
-.upper-menu {
-    max-width: 480px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: auto;
-  }
-  /*search bar*/
+/*hidden for mobile*/
+.search-bar .search-icon,
+.lower-menu .megamenu nav,
+.upper-menu .page-titles .page-titles-list li,
+.other-pages-list,
+header .lower-menu .megamenu {
+  display: none;
+}
+.background-gray {
+  background-color: transparent;
+}
 
+.upper-menu {
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: auto;
+}
+header {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.logo-image {
+  width: 100%;
+  margin: auto 0;
+}
+/*search bar*/
+header .upper-menu {
+  flex-direction: column-reverse;
+}
 header .upper-menu .search-input ::placeholder {
-    height: 16px;
-    width: 156px;
-    color: #6f6f6f;
-    font-family: "Proxima Nova Semibold", sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 16px;
-    text-align: center;
-  }
-  .search-bar {
-    margin: auto;
-    max-width: 200px;
-    width: 100%;
-  }
-  .search-bar .search-input {
-    height: 35px;
-    width: 320px;
-    border-radius: 0;
-  }
-  .search-bar .fa-magnifying-glass {
-    display: block;
-  }
-  .search-bar .search-icon {
-    display: none;
-  }
-  .lower-menu .megamenu nav{
-    display: none;
-  }
-  .logo-image .painful-logo {
-    max-height: 40px;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    margin: 2px;
-  }
-  .lower-menu .logo-image .painful-logo {
-    max-width: 119px;
-    max-height: 40px;
-    width: 100%;
-    height: 100%;
-  }
-  
+  height: 16px;
+  width: 156px;
+  color: #6f6f6f;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+}
+.search-bar {
+  margin: auto;
+  max-width: 600px;
+  width: 100%;
+}
+.search-bar .search-input {
+  height: 35px;
+  border-radius: 0;
+  width: 100%;
+  max-width: 600px;
+  margin: auto 0;
+}
+.search-bar .fa-magnifying-glass {
+  display: block;
+}
+
+.logo-image .painful-logo {
+  max-height: 40px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 2px;
+}
+.lower-menu .logo-image .painful-logo {
+  max-width: 119px;
+  max-height: 40px;
+  width: 100%;
+  height: 100%;
+}
+.mobile-icons ul {
+  display: flex;
+  list-style-type: none;
+  max-width: 200px;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.mobile-icons ul li {
+  display: inline;
+  max-width: 40px;
+}
+.mobile-icons {
+  width: 100%;
+  margin: auto 0;
+}
+
+/*lower menu*/
+header .lower-menu {
+  margin: auto;
+  max-width: 600px;
+  width: 100%;
+}

@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
     <link
-    rel="stylesheet"
-    href="css/mobile.css"
-    media="screen and (max-width:768px)"
-  />
+      rel="stylesheet"
+      href="css/mobile.css"
+      media="screen and (max-width:768px)"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <script src="js/index.js"></script>
     <title>Painful pleasures</title>
   </head>
   <body>
@@ -33,30 +34,19 @@
               class="search-input"
             />
             <button class="search-icon">
-              <i
-                class="fa-solid fa-magnifying-glass"
-                style="color: #ffffff"
-              ></i>
+              <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
           <section class="other-pages">
             <ul class="other-pages-list">
               <li class="community-page">Community</li>
               <li class="account">
-                <i
-                  class="fa-solid fa-circle-user fa-xl"
-                  style="color: #2a2a2a"
-                ></i>
-                &nbsp; Account <i
-                  class="fa-solid fa-chevron-down fa-2xs"
-                  style="color: #575757"
-                ></i>
+                <i class="fa-solid fa-circle-user fa-xl"></i>
+                &nbsp; Account <i class="fa-solid fa-chevron-down fa-2xs"></i>
               </li>
               <li class="cart">
-                <i class="fa-solid fa-cart-shopping desktop"></i>&nbsp;Cart <i
-                  class="fa-solid fa-chevron-down fa-2xs"
-                  style="color: #575757"
-                ></i>
+                <i class="fa-solid fa-cart-shopping desktop"></i>&nbsp;Cart
+                <i class="fa-solid fa-chevron-down fa-2xs"></i>
               </li>
             </ul>
           </section>
@@ -70,50 +60,127 @@
             alt="Painful Pleasures"
           />
         </div>
+        <div class="mobile-icons">
+          <ul>
+            <li><i class="fa-solid fa-circle-user fa-xl"></i></li>
+            <li><i class="fa-solid fa-cart-shopping desktop fa-xl"></i></li>
+            <li><i onclick="myFunction(this)" class="fa-sharp fa-solid fa-bars fa-2xl"></i></li>
+          </ul>
+        </div>
         <div class="megamenu">
           <nav class="main-navigation">
             <ul class="megamenu-list">
               <li class="menu-item-1">
-                Body Jewlery <i
-                  class="fa-solid fa-chevron-down fa-2xs"
-                  style="color: #575757"
-                ></i>
+                Body Jewlery <i class="fa-solid fa-chevron-down fa-2xs"></i>
               </li>
               <li class="menu-item-2">
-                Piercing <i
-                  class="fa-solid fa-chevron-down fa-2xs"
-                  style="color: #575757"
-                ></i>
+                Piercing <i class="fa-solid fa-chevron-down fa-2xs"></i>
               </li>
               <li class="menu-item-3">
-                Tattoo <i
-                  class="fa-solid fa-chevron-down fa-2xs"
-                  style="color: #575757"
-                ></i>
+                Tattoo <i class="fa-solid fa-chevron-down fa-2xs"></i>
               </li>
               <li class="menu-item-4">
-                Medical <i
-                  class="fa-solid fa-chevron-down fa-2xs"
-                  style="color: #575757"
-                ></i>
+                Medical <i class="fa-solid fa-chevron-down fa-2xs"></i>
               </li>
               <li class="menu-item-5">
-                Studio <i
-                  class="fa-solid fa-chevron-down fa-2xs"
-                  style="color: #575757"
-                ></i>
+                Studio <i class="fa-solid fa-chevron-down fa-2xs"></i>
               </li>
               <li class="menu-item-6">
-                Permanent Makeup <i
-                  class="fa-solid fa-chevron-down fa-2xs"
-                  style="color: #575757"
-                ></i>
+                Permanent Makeup <i class="fa-solid fa-chevron-down fa-2xs"></i>
               </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-   
+    <!-- <footer>
+      <section class="content">
+        <img
+          class="footer-logo"
+          src="https://placehold.co/60x60"
+          alt="Painful Pleasures"
+        />
+
+        <h2 class="footer-motto">
+          The leading provider of quality jewlery, tattoo and piercing supplies
+        </h2>
+      </section>
+      <section class="upper-footer">
+        <div class="col-1">
+          <ul class="col-list-1">
+            <li class="col-list-title">Helpful Links</li>
+
+            <li class="footer-link">Contact us</li>
+            <li class="footer-link">Support</li>
+            <li class="footer-link">About</li>
+            <li class="footer-link">Accessibility Statement</li>
+          </ul>
+        </div>
+        <hr class="footer-horizontal-line-mobile" />
+        <div class="col-2">
+          <ul class="col-list-2">
+            <li class="col-list-title">Shopping</li>
+            <li class="footer-link">Reviews</li>
+            <li class="footer-link">Returns</li>
+            <li class="footer-link">Shipping</li>
+            <li class="footer-link">Track Order</li>
+          </ul>
+        </div>
+        <hr class="footer-horizontal-line-mobile" />
+        <div class="col-3">
+          <ul class="col-list-3">
+            <li class="col-list-title">Get in touch</li>
+            <li class="footer-link">
+              <i class="fa-solid fa-phone"></i
+              >410-712-0145<br />
+              (9:30 am-5pm EST Mon - Fri)
+            </li>
+            <li class="footer-link">
+              <i class="fa-solid fa-envelope"></i
+              >support@painfulpleasures.com
+            </li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <div class="footer-link newsletter">
+            <span> Sign Up to our newsletter</span>
+
+            <form class="subscribe-form">
+              <input type="email" placeholder="Newsletter Sign-Up" />
+              <button class="sign-up-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="lower-footer">
+        <div class="dropdowns">
+          <div class="shopping-dropdown">
+            <span>Shopping</span><br />
+            <select name="pages" id="dropdown-footer">
+              <option value="retail">Retail</option>
+              <option value="wholesale-pros-only">Wholesale Pros-Only</option>
+            </select>
+          </div>
+          <div class="languages-dropdown">
+            <span>Languages</span><br />
+            <select name="pages" id="dropdown-footer">
+              <option value="english">English</option>
+              <option value="italian">Italian</option>
+            </select>
+          </div>
+          <div class="copyright">
+            <span>Sitemap&nbsp; Terms of Use&nbsp; Privacy</span><br />
+            <span>&copy;2020</span>
+          </div>
+          <div class="payments-image">
+            <img
+              class="payment"
+              src="img/Payment methods.png"
+              alt="Payment Methods"
+            />
+          </div>
+        </div>
+      </section>
+    </footer> -->
   </body>
 </html>

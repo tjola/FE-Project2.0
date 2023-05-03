@@ -21,6 +21,9 @@
   font-family: ".SF NS Display";
   src: url(../fonts/SFNS\ Display\ Regular.ttf);
 }
+  .mobile-icons ul{
+    display: none;
+  }
 
 /*utilities*/
 .background-gray {
@@ -44,12 +47,23 @@
   margin: auto;
   padding-top: 40px;
 }
+.fa-chevron-down {
+  color: #575757;
+}
+.fa-circle-user{
+  color: #2a2a2a;
+}
+.fa-magnifying-glass, .fa-phone, .fa-envelope{
+color: #fff;
+}
 /*header section*/
 .background-gray .upper-menu,
 .background-gray .lower-menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  max-width: 1360px;
+  margin: 0 auto;
 }
 .background-gray .upper-menu .page-titles li,
 .upper-menu .other-pages li,
@@ -145,6 +159,8 @@ header .upper-menu .search-input ::placeholder {
 header .lower-menu {
   display: flex;
   justify-content: space-around;
+  max-width: 1360px;
+  margin: 0 auto;
 }
 header .lower-menu .megamenu {
   max-width: 1360px;
@@ -166,7 +182,7 @@ nav ul.megamenu-list li {
   line-height: 13px;
   text-align: center;
   list-style-type: none;
-  margin: auto;
+  margin: auto 0;
   max-width: 160px;
   width: 100%;
   text-transform: uppercase;

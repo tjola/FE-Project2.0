@@ -21,7 +21,7 @@
   font-family: ".SF NS Display";
   src: url(../fonts/SFNS\ Display\ Regular.ttf);
 }
-  .mobile-icons ul{
+  .mobile-icons ul, .footer-horizontal-line-mobile{
     display: none;
   }
 
@@ -30,8 +30,27 @@
   background-color: #eeeeee;
   width: 100%;
 }
+.payments-image {
+  max-width: 547px;
+}
+img.payment {
+  width: 100%;
+}
 .container {
   width: 100%;
+}
+.col-list-title{
+  min-height: 20px;
+  max-width: 250px;
+  color: #FFFFFF;
+  font-family: "Proxima Nova SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: 20px;
 }
 .title-header h3 {
   text-transform: uppercase;
@@ -55,6 +74,19 @@
 }
 .fa-magnifying-glass, .fa-phone, .fa-envelope{
 color: #fff;
+}
+.footer-link {
+  max-height: 144px;
+  max-width: 240px;
+  color: #ffffff;
+  font-family: ".SF NS Display";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 36px;
+  height: 100%;
+  list-style: none;
+  width: 100%;
+  text-align: left;
 }
 /*header section*/
 .background-gray .upper-menu,
@@ -193,4 +225,191 @@ nav.main-navigation {
 }
 img.painful-logo {
   margin: 20px 0;
+}
+ /* .container-grid {
+  display: grid;
+  gap: 15px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1360px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#item-0 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+#item-1 {
+  grid-row-start: 1;
+  grid-column-start: 3;
+
+  grid-row-end: 2;
+  grid-column-end: 4;
+}
+#item-2 {
+  grid-row-start: 2;
+  grid-column-start: 3;
+
+  grid-row-end: 3;
+  grid-column-end: 4;
+}
+#item-0 img,
+#item-1 img,
+#item-2 img {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  object-fit: cover;
+} */
+
+/*footer wrapper*/
+footer{
+  width: 100%;
+  /* position: absolute; */
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4 {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+footer .footer-wrapper{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+footer .footer-wrapper .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+/*content section styling*/
+footer .content {
+  display: flex;
+  justify-content: center;
+  height: 451px;
+  height: 100%;
+  width: 100%;
+  background-color: #407ec9;
+  border-bottom: 2px solid #6F99CB;
+}
+footer .content .footer-motto {
+ 
+  width: 100%;
+  color: #cbe2ff;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: center;
+  max-width: 530px;
+}
+
+footer .content .footer-logo {
+  margin: 40px 0;
+  margin-bottom: 20px;
+  border-radius: 100%;
+}
+/*footer content middle*/
+footer .upper-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #407EC9;
+  padding: 30px 0;
+}
+.width{
+  max-width: 1360px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/*lower footer content*/
+footer .lower-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  min-height: 94px;
+  background-color: #1A355C;
+  padding: 20px;
+}
+.lower-footer .width .dropdown-title{
+  min-height: 16px;
+  max-width: 58px;
+  color: #FFFFFF;
+  font-family: ".SF NS Display", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+#dropdown-footer{
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 31px;
+  border: 2px solid #7F8387;
+  color: #FFFFFF;
+  font-family: "Proxima Nova Bold";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 17px;
+  background-color: #1A355C;
+}
+.copyright {
+  height: 22px;
+  max-width: 234px;
+  color: #FFFFFF;
+  font-family: ".SF NS Display";
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: center;
+}
+.subscribe-form {
+  display: flex;
+}
+.subscribe-form .sign-up-btn {
+  display: inline-block;
+}
+.subscribe-form input[type="email"] {
+  display: inline-block;
+  width: 60%;
+  max-width: 200px;
+  height: 40px;
+}
+.subscribe-form input[type="email"]::placeholder {
+  color: #000000;
+  font-family: ".SF NS Display", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-align: center;
+}
+.sign-up-btn {
+  background-color: #282828;
+  max-height: 39px;
+  max-width: 92px;
+  height: 100%;
+  width: 100%;
+  height: 40px;
+  color: #ffffff;
+  font-family: "Proxima Nova Semibold";
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px 0;
+  text-align: center;
 }

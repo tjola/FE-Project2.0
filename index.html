@@ -64,30 +64,16 @@
           <ul>
             <li><i class="fa-solid fa-circle-user fa-xl"></i></li>
             <li><i class="fa-solid fa-cart-shopping desktop fa-xl"></i></li>
-            <li><li id="menu-toggle"></li><i class="fa-sharp fa-solid fa-bars fa-2xl"></i></li>
+            <li>
+              <i
+                onclick="myFunction(this)"
+                class="fa-sharp fa-solid fa-bars fa-2xl"
+              ></i>
+            </li>
           </ul>
         </div>
-        <nav>
-          <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
-          <label class="m-menu__toggle" for="menu">
-            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-          </label>
-          <label class="m-menu__overlay" for="menu"></label>
-        
-          <div class="m-menu">
-            <div class="m-menu__header">
-              <label class="m-menu__toggle" for="menu">
-                <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
-                  <line x1="18" y1="6" x2="6" y2="18"></line>
-                  <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-              </label>
-              <span>MENU</span>
-            </div>
-            <ul class="m-menu-list">
-                        </ul>  
-          </div>
-        </nav>
+        <div class="overlay"></div>
+
         <div class="megamenu">
           <nav class="main-navigation">
             <ul class="megamenu-list">
@@ -114,94 +100,101 @@
         </div>
       </div>
     </header>
+    <!-- <div class="caroussel-hero-grid">
+      <div class="container-grid">
+        <div id="item-0"><img src="https://placehold.co/907x572" /></div>
+        <div id="item-1"><img src="https://placehold.co/537x398" /></div>
+        <div id="item-2"><img src="https://placehold.co/446x249" /></div>
+      </div>
+    </div> -->
     <footer>
-      <section class="content">
-        <img
-          class="footer-logo"
-          src="https://placehold.co/60x60"
-          alt="Painful Pleasures"
-        />
+      <div class="footer-wrapper">
+        <section class="content">
+          <img
+            class="footer-logo"
+            src="https://placehold.co/60x60"
+            alt="Painful Pleasures"
+          />
 
-        <h2 class="footer-motto">
-          The leading provider of quality jewlery, tattoo and piercing supplies
-        </h2>
-      </section>
-      <section class="upper-footer">
-        <div class="col-1">
-          <ul class="col-list-1">
-            <li class="col-list-title">Helpful Links</li>
-
-            <li class="footer-link">Contact us</li>
-            <li class="footer-link">Support</li>
-            <li class="footer-link">About</li>
-            <li class="footer-link">Accessibility Statement</li>
-          </ul>
-        </div>
-        <hr class="footer-horizontal-line-mobile" />
-        <div class="col-2">
-          <ul class="col-list-2">
-            <li class="col-list-title">Shopping</li>
-            <li class="footer-link">Reviews</li>
-            <li class="footer-link">Returns</li>
-            <li class="footer-link">Shipping</li>
-            <li class="footer-link">Track Order</li>
-          </ul>
-        </div>
-        <hr class="footer-horizontal-line-mobile" />
-        <div class="col-3">
-          <ul class="col-list-3">
-            <li class="col-list-title">Get in touch</li>
-            <li class="footer-link">
-              <i class="fa-solid fa-phone"></i
-              >410-712-0145<br />
-              (9:30 am-5pm EST Mon - Fri)
-            </li>
-            <li class="footer-link">
-              <i class="fa-solid fa-envelope"></i
-              >support@painfulpleasures.com
-            </li>
-          </ul>
-        </div>
-        <div class="col-4">
-          <div class="footer-link newsletter">
-            <span> Sign Up to our newsletter</span>
-
-            <form class="subscribe-form">
-              <input type="email" placeholder="Newsletter Sign-Up" />
-              <button class="sign-up-btn">Submit</button>
-            </form>
+          <h3 class="footer-motto">
+            The leading provider of quality jewlery, tattoo and piercing
+            supplies
+          </h3>
+        </section>
+        <section class="upper-footer">
+          <div class="width">
+            <div class="col-1">
+              <h3 class="col-list-title">Helpful Links</h3>
+              <ul class="col-list-1">
+                <li class="footer-link">Contact us</li>
+                <li class="footer-link">Support</li>
+                <li class="footer-link">About</li>
+                <li class="footer-link">Accessibility Statement</li>
+              </ul>
+            </div>
+            <hr class="footer-horizontal-line-mobile" />
+            <div class="col-2">
+              <ul class="col-list-2">
+                <h3 class="col-list-title">Shopping</h3>
+                <li class="footer-link">Reviews</li>
+                <li class="footer-link">Returns</li>
+                <li class="footer-link">Shipping</li>
+                <li class="footer-link">Track Order</li>
+              </ul>
+            </div>
+            <hr class="footer-horizontal-line-mobile" />
+            <div class="col-3">
+              <ul class="col-list-3">
+                <h3 class="col-list-title">Get in touch</h3>
+                <li class="footer-link">
+                  <i class="fa-solid fa-phone"></i> 410-712-0145<br /> 
+                  (9:30 am-5pm EST Mon - Fri)
+                </li>
+                <li class="footer-link">
+                  <i class="fa-solid fa-envelope"></i
+                  > support@painfulpleasures.com
+                </li>
+              </ul>
+            </div>
+            <div class="col-4">
+                <h3 class="col-list-title"> Sign Up to our newsletter</h3>
+                <form class="subscribe-form">
+                  <input type="email" placeholder="Newsletter Sign-Up" />
+                  <button class="sign-up-btn">Submit</button>
+                </form>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="lower-footer">
-        <div class="dropdowns">
-          <div class="shopping-dropdown">
-            <span>Shopping</span><br />
-            <select name="pages" id="dropdown-footer">
-              <option value="retail">Retail</option>
-              <option value="wholesale-pros-only">Wholesale Pros-Only</option>
-            </select>
+        </section>
+        <section class="lower-footer">
+          <div class="width">
+            <div class="shopping-dropdown">
+              <span class="dropdown-title">Shopping:</span><br />
+              <select name="pages" id="dropdown-footer">
+                <option value="retail">Retail</option>
+                <option value="wholesale-pros-only">Wholesale Pros-Only</option>
+              </select>
+            </div>
+            <div class="languages-dropdown">
+              <span class="dropdown-title">Languages:</span><br />
+              <select name="pages" id="dropdown-footer">
+                <option value="english">English/USD</option><i></i>
+                <option value="italian">Italian/EUR</option>
+              </select>
+            </div>
+            <div class="copyright">
+              <span>Sitemap&nbsp;&nbsp; Terms of Use&nbsp;&nbsp; Privacy Policy</span><br />
+              <span>©2020</span>
+            </div>
+            <div class="payments-image">
+              <img
+                class="payment"
+                src="img/Payment methods.png"
+                alt="Payment Methods"
+              />
+            </div>
           </div>
-          <div class="languages-dropdown">
-            <span>Languages</span><br />
-            <select name="pages" id="dropdown-footer">
-              <option value="english">English</option>
-              <option value="italian">Italian</option>
-            </select>
-          </div>
-          <div class="copyright">
-            <span>Sitemap&nbsp; Terms of Use&nbsp; Privacy</span><br />
-            <span>&copy;2020</span>
-          </div>
-          <div class="payments-image">
-            <img
-              class="payment"
-              src="img/Payment methods.png"
-              alt="Payment Methods"
-            />
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

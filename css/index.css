@@ -27,7 +27,9 @@ li.menu-item-7.extra,
 li.menu-item-8.extra,
 .footer-horizontal-line-mobile,
 .cart-shopping-mobile,
-.heart-shopping-mobile {
+.heart-shopping-mobile,
+.swiper-button-prev,
+.swiper-button-next {
   display: none;
 }
 
@@ -556,9 +558,7 @@ img.community-img {
 footer {
   width: 100%;
 }
-.swiper-button-prev{
-  background-color: #1a355c;
-}
+
 .col-1,
 .col-2,
 .col-3,

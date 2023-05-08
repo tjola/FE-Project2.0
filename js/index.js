@@ -30,5 +30,61 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }, 300); 
   });
+  // Initialize Swiper
+var swiper = new Swiper('.swiper-container', {
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+// Add event listeners to buttons
+document.querySelector('.swiper-button-next').addEventListener('click', function() {
+  swiper.slideNext();
+});
+
+document.querySelector('.swiper-button-prev').addEventListener('click', function() {
+  swiper.slidePrev();
+});
 
 });
+// var swiper = new Swiper('.swiper', {
+//   // Set the swiper options and settings
+//   loop: true,
+//   slidesPerView: 1,
+//   spaceBetween: 10,
+//   autoplay: {
+//     delay: 5000,
+//     disableOnInteraction: false,
+//   },
+  
+//   // Add the navigation buttons
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+  
+//   // Add the pagination bullets
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+  
+//   // Enable the lazy loading for the images
+//   lazy: {
+//     loadPrevNext: true,
+//   },
+  
+//   // Enable the keyboard navigation
+//   keyboard: {
+//     enabled: true,
+//   },
+  
+//   // Enable the mousewheel navigation
+//   mousewheel: {
+//     invert: true,
+//   },
+// });
+
+

@@ -9,7 +9,9 @@ header .lower-menu .megamenu {
 .background-gray {
   background-color: transparent;
 }
-
+.title-header h3{
+  padding: 0 !important;
+}
 .upper-menu {
   max-width: 480px;
   width: 100%;
@@ -224,67 +226,7 @@ img.community-img {
   display: none;
 }
 
-.supply-card {
-  flex-direction: row;
-  width: calc(100% - 50px);
-}
-.supplies-grid {
-  flex-direction: column;
-}
 
-.supply-img-container {
-  order: -1;
-  align-self: self-start;
-}
-.shop-now,
-.supply-title {
-  float: right;
-}
-.supply-title {
-  color: #575757;
-  font-family: "Proxima Nova Bold";
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 0.73px;
-  line-height: 20px;
-  text-align: justify;
-  text-transform: uppercase;
-}
-.description-supply .shop-now {
-  color: #407ec9;
-  font-family: "Proxima Nova Semibold";
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 17px;
-  text-align: left;
-  background-color: transparent;
-}
-.supply-horizontal-line {
-  height: 1px;
-  max-width: 790px;
-  width: 100%;
-  border: 1px solid #eeeeee;
-}
-.icons-mobile {
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  gap: 20px;
-}
-
-.supply-img {
-  max-width: 100px;
-  width: 100%;
-  max-height: 100px;
-  height: 100%;
-  /* margin-left: 40px; */
-  margin: 40px 20px;
-}
-
-.description-supply {
-  margin: 50px 24px;
-}
 
 /*reviews*/
 
@@ -300,7 +242,12 @@ p.review-text {
   border: 1px solid #6f99cb;
   margin: 0;
 }
-
+.reviews-grid .review-card {
+  margin: 10px auto;
+  height: 274px;
+  max-width: 320px;
+  width: 100%;
+}
 .subscribe-form {
   padding: 20px;
 }
@@ -363,6 +310,35 @@ nav .m-menu ul li label.main-menu {
   display: flex;
   justify-content: space-around;
 }
+/*slider*/
+
+.swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      top: 50%;
+      width: auto;
+      height: auto;
+      margin-top: -20px;
+      padding: 10px;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+      cursor: pointer;
+      z-index: 10;
+    }
+    
+    .swiper-button-prev {
+      left: 10px;
+    }
+    
+    .swiper-button-next {
+      right: 10px;
+    }
+    /*to overwrite swiper css from having an effect on the new product cards*/
+    .new-products-card.swiper-slide {
+      flex-shrink: unset;
+  }
 
 /*footerr*/
 footer .upper-footer .width {
@@ -447,10 +423,7 @@ margin: 20px 20px;
 .product-price {
 text-align: center;
 }
-.icons-mobile-new-products{
-  display: flex;
-  justify-content: space-around;
-}
+
 /*mobile menu*/
 
 ul.page-titles-list.active {
@@ -559,4 +532,56 @@ i.fa-sharp.fa-solid.fa-xmark.fa-2xl {
   right: 0;
   margin: 25px 40px;
   color: #fff;
+}
+/*supplies-grid*/
+.supply-card {
+  flex-direction: row;
+  width: calc(100% - 50px);
+  margin: 0 auto;
+}
+.supplies-grid {
+  flex-direction: column;
+}
+.description-supply {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  height: 100%;
+}
+.supply-img-container {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+strong.supply-title {
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 2;
+  grid-column-end: 6;
+  max-width: 250px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+.supply-card button.shop-now {
+  grid-row-start: 2;
+  grid-column-start: 3;
+  grid-row-end: 3;
+  grid-column-end: 6;
+  max-width: 280px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  color: #407EC9;
+  font-family: "Proxima Nova Bold";
+  font-size: 14px;
+  background-color: transparent;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+  border: none;
 }

@@ -22,7 +22,7 @@
   src: url(../fonts/SFNS\ Display\ Regular.ttf);
 }
 .mobile-icons ul,li.menu-item-6.extra,li.menu-item-7.extra,li.menu-item-8.extra,
-.footer-horizontal-line-mobile {
+.footer-horizontal-line-mobile, .cart-shopping-mobile, .heart-shopping-mobile {
   display: none;
 }
 
@@ -78,6 +78,13 @@ img.payment {
 .fa-envelope {
   color: #fff;
 }
+.fa-cart-shopping{
+  color: #ffffff;background-color:#407EC9;width: 52px;height: 30px; padding: 7px 17px;
+}
+.fa-heart{
+  color: #6f6f6f;border:2px solid #6f6f6f;width: 52px;height: 30px;padding: 14px 14px;
+}
+
 .footer-link {
   max-height: 144px;
   max-width: 240px;
@@ -236,6 +243,7 @@ nav.main-navigation {
 img.painful-logo {
   margin: 20px 0;
 }
+/*hero section*/
 .container-grid {
   display: grid;
   gap: 15px;
@@ -278,10 +286,188 @@ img.painful-logo {
   object-fit: cover;
 }
 
+/*supplies grid*/
+.supplies-container {
+  width: 100%;
+}
+.supplies-grid {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  top: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  max-width: 1360px;
+  gap: 10px;
+}
+.supply-title {
+  height: 54px;
+  max-width: 159px;
+  color: #575757;
+  font-family: "Proxima Nova Bold";
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 27px;
+  text-align: center;
+  margin-bottom: -20px;
+}
+.supply-card {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+}
+
+.supply-card .shop-now {
+  width: 100%;
+  color: #ffffff;
+  font-family: "Proxima Nova Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+  border: none;
+  height: 20px;
+}
+.description-supply {
+  text-align: center;
+}
+button.shop-now {
+  align-items: center !important;
+  height: 40px !important;
+  width: 100%;
+  background-color: #407ec9;
+  align-self: center;
+}
+/*community grid*/
+.community-grid {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container {
+  width: 100%;
+}
+.community-grid .community-card {
+  height: 419px;
+  max-width: 446px;
+  width: 100%;
+}
+img.community-img {
+  width: 100%;
+  max-width: 446px;
+}
+.community-grid .community-card .description {
+  height: 78px;
+  max-width: 403px;
+  color: #000000;
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+}
+.community-grid .community-card .date {
+  height: 26px;
+  max-width: 103px;
+  color: #000000;
+  font-family: ".SF NS Display";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+.blog-post {
+  display: flex;
+  justify-content: center;
+}
+.blog-post .community-blogs-btn {
+  display: block;
+  align-items: center;
+  height: 50px;
+  max-width: 189px;
+  width: 100%;
+  background-color: #407ec9;
+  color: #ffffff;
+  font-family: "Proxima Nova Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+  border: none;
+}
+/*new products grid*/
+
+.new-products-grid {
+  display: flex;
+  justify-content: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  height: 552px;
+  width: 100%;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.new-products-card {
+box-sizing: border-box;
+max-height: 376px;
+height: 100%;
+width: 100%;
+max-width: 262px;
+border: 1px solid #eeeeee;
+background-color: #ffffff;
+margin: inherit;
+}
+.new-product-img {
+max-width: 260px;
+width: 100%;
+}
+
+
+.supply-img{
+max-width: 260px;
+width: 100%;
+}
+
+.new-products-card .product-price {
+height: 26px;
+max-width: 70px;
+width: 100%;
+color: #407ec9;
+font-family: "Proxima Nova Bold", sans-serif;
+font-size: 18px;
+font-weight: bold;
+letter-spacing: 0;
+line-height: 26px;
+text-align: center;
+}
+.new-products-card .product-description {
+height: 44px;
+max-width: 246px;
+width: 100%;
+color: #282828;
+font-family: "Proxima Nova Medium", sans-serif;
+font-size: 16px;
+font-weight: 500;
+letter-spacing: 0;
+line-height: 22px;
+text-align: center;
+}
+
+
 /*footer wrapper*/
 footer {
   width: 100%;
-  /* position: absolute; */
 }
 .col-1,
 .col-2,

@@ -556,6 +556,9 @@ img.community-img {
 footer {
   width: 100%;
 }
+.swiper-button-prev{
+  background-color: #1a355c;
+}
 .col-1,
 .col-2,
 .col-3,

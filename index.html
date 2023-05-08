@@ -14,6 +14,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
     <title>Painful pleasures</title>
   </head>
@@ -230,19 +232,19 @@
         <button class="community-blogs-btn">See all blog posts</button>
       </div>
     </div>
-    <div class="background-gray products">
+
+    <div class="background-gray products swiper">
       <div class="title-header">
         <h3 class="title-header">New Products</h3>
       </div>
-      <div class="new-products-grid">
-        <div class="new-products-card">
+      <div class="new-products-grid swiper-wrapper">
+        <div class="new-products-card swiper-slide">
           <img
             class="new-product-img"
             src="https://placehold.co/260x260"
             alt="New product"
           /><br />
           <p class="product-price">$449.99</p>
-          <br />
           <p class="product-description">Rook Quill Tattoo Machine</p>
           <div class="icons-mobile-new-products">
             <p class="cart-shopping-mobile">
@@ -271,7 +273,7 @@
             </p>
           </div>
         </div>
-        <div class="new-products-card">
+        <div class="new-products-card swiper-slide">
           <img
             class="new-product-img"
             src="https://placehold.co/260x260"
@@ -307,7 +309,7 @@
             </p>
           </div>
         </div>
-        <div class="new-products-card">
+        <div class="new-products-card swiper-slide">
           <img
             class="new-product-img"
             src="https://placehold.co/260x260"
@@ -343,7 +345,7 @@
             </p>
           </div>
         </div>
-        <div class="new-products-card">
+        <div class="new-products-card swiper-slide">
           <img
             class="new-product-img"
             src="https://placehold.co/260x260"
@@ -379,7 +381,7 @@
             </p>
           </div>
         </div>
-        <div class="new-products-card">
+        <div class="new-products-card swiper-slide">
           <img
             class="new-product-img"
             src="https://placehold.co/260x260"
@@ -416,6 +418,8 @@
           </div>
         </div>
       </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
     <div class="container reviews">
       <div class="title-header">
@@ -624,3 +628,4 @@
     </footer>
   </body>
 </html>
+<!-- https://codepen.io/tutsplus/pen/poWpeoW -->

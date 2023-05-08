@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     megamenuList.classList.toggle("active");
     this.parentNode.appendChild(megamenuList);
   });
+
 });
 document.addEventListener("DOMContentLoaded", function () {
   const megamenu = document.querySelector(".megamenu");
@@ -21,10 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
       if (barsIcon.classList.contains("active")) {
         barsIcon.classList.remove("fa-bars");
         barsIcon.classList.add("fa-xmark");
+      
       } else {
         barsIcon.classList.remove("fa-xmark");
         barsIcon.classList.add("fa-bars");
+        
       }
-    }, 300); // Use the same duration as the CSS transition (0.3 seconds)
+    }, 300); 
   });
 });

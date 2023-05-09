@@ -573,7 +573,7 @@ i.fa-sharp.fa-solid.fa-xmark.fa-2xl {
   gap: 0px;
   height: 100%;
 }
-.supply-img-containerimg.supply-img {
+.supply-img-container img.supply-img {
   height: 79px;
   width: 75px;
   grid-row-start: 1;
@@ -587,7 +587,7 @@ strong.supply-title {
   grid-row-end: 2;
   grid-column-end: 6;
   height: 54px;
-  max-width: 160px !important;
+  max-width: 185px !important;
   color: #575757;
   font-family: "Proxima Nova Bold";
   font-size: 16px;
@@ -618,3 +618,29 @@ strong.supply-title {
   padding-top: 30px;
   margin: auto 60px;
 }
+.sub-menu.level-2.active {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+ul.sub-menu.level-2.active li {
+  max-width: fit-content;
+  padding: 20px 0;
+  text-align: left;
+}
+li.menu-item-3.active{
+  background: azure;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  margin: auto;
+  z-index: 100;
+}
+ul.sub-menu.level-2.active li {
+  background: aliceblue;
+  max-width: 550px;
+  width: 100%;
+  margin: auto;
+  padding: 4px;
+}
+

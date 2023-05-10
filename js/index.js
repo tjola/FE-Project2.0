@@ -19,13 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
   linkSelected.addEventListener("click", function () {
     nestedMenu.classList.toggle("active");
     tattoLink.classList.toggle("active");
-    if(tattoLink.classList.contains("active")){
+    if (tattoLink.classList.contains("active")) {
       chevrons.classList.remove("fa-chevron-down");
       chevrons.classList.add("fa-chevron-right");
-    }else{
-      console.log(99)
+    } else {
+      console.log(99);
     }
-  
   });
 
   barsIcon.addEventListener("click", function () {
@@ -40,8 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         barsIcon.classList.remove("fa-xmark");
         barsIcon.classList.add("fa-bars");
-        tattoLink.classList.toggle("active");
-        nestedMenu.classList.toggle("active");
+        tattoLink.classList.remove("active");
+        nestedMenu.classList.remove("active");
       }
     }, 300);
   });

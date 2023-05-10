@@ -439,36 +439,7 @@ img.community-img {
   text-align: center;
   border: none;
 }
-/*new products grid*/
-
-.new-products-grid {
-  display: flex;
-  justify-content: left;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  height: 465px;
-  width: 100%;
-  align-items: center;
-  /* overflow-x: scroll; */
-  /* overflow-y: hidden; */
-  margin: 0 auto;
-  max-width: 1360px;
-}
-.new-products-card {
-  box-sizing: border-box;
-  max-height: 376px;
-  height: 100%;
-  width: 100%;
-  max-width: 262px;
-  border: 1px solid #eeeeee;
-  background-color: #ffffff;
-  margin: inherit;
-}
-.new-product-img {
-  max-width: 260px;
-  width: 100%;
-}
-
+/*new products*/
 .supply-img {
   height: 187px;
   width: 178px;
@@ -497,7 +468,7 @@ img.community-img {
   letter-spacing: 0;
   line-height: 22px;
   text-align: center;
-}
+} 
 /*reviews grid*/
 .reviews-grid {
   display: flex;
@@ -718,17 +689,57 @@ footer .lower-footer {
   transition-timing-function: linear;
 }
 
-.swiper-container{
-  position: relative;
-  width: 70%;
-  margin: 0 auto;
-}
-.swiper-container .swiper-button-prev{
-  left: -40px;
-}
-.swiper-container .swiper-button-next{
-  right: -40px;
-}
-.swiper-container .swiper-pagination{
+ .swiper-pagination{
   bottom: 0px!important;
+} 
+.swiper {
+  width: 100%;
+  height: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 60px !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: larger !important;
+  text-transform: none!important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+}
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: var(--swiper-navigation-top-offset,50%);
+  width: 31px !important;
+  height: 31px !important;
+  margin-top: 0;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+  background: #ABAEB1;
+  border-radius: 100%;
 }

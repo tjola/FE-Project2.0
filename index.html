@@ -33,6 +33,7 @@
             </ul>
           </section>
           <form class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
             <input
               type="text"
               placeholder="Search by name, category...."
@@ -78,58 +79,55 @@
         <div class="overlay"></div>
 
         <div class="megamenu">
-          <nav class="main-navigation">
+          <nav class="main-navigation list-wrapper">
             <ul class="megamenu-list">
               <li class="menu-item-1">
-                <a class="menu-item-link" href="#"> Body Jewlery </a
+                <a class="menu-item-link" href="#"> Body Jewelry </a
                 ><i class="fa-solid fa-chevron-down fa-2xs"></i>
               </li>
               <li class="menu-item-2">
                 Piercing <i class="fa-solid fa-chevron-down fa-2xs"></i>
               </li>
-              <li class="menu-item-3">
+              <li class="menu-item-3 level-1">
                 <a class="menu-item-3 nested" href="#"> Tattoo</a>
                 <i class="fa-solid fa-chevron-down fa-2xs"></i>
-                <ul class="sub-menu level-2">
-                  <li><label class="submenu-deals">New Arrivals</label></li>
-                  <li><label class="submenu-deals">% ON SALE</label></li>
-                  <li>
-                    <label class="submenu-deals"
-                      >VIEW ALL TATTOO SUPPLIES</label
-                    >
-                  </li>
-                  <li><label class="title-submenu">TATTOO NEEDLES</label></li>
-                  <li><label>Cartridge Neddles</label></li>
-                  <li><label>Traditional Needles</label></li>
-                  <li><label>Needles by Brand</label></li>
-                  <li><label>Shop By Needle Grouping</label></li>
-                  <li><label class="title-submenu">TATTOO INK</label></li>
-                  <li><label>Intenze Ink</label></li>
-                  <li><label>Eternal Ink</label></li>
-                  <li><label>Dynamic Tattoo Ink</label></li>
-                  <li><label>World Famous Tattoo Ink</label></li>
-                  <li><label>Fusion Ink</label></li>
-                  <li><label>StarBrite by Tommy's</label></li>
-                  <li><label>Solid Ink</label></li>
-                  <li><label>Empire links</label></li>
-                  <li><label>Silverback Ink</label></li>
-                  <li><label>All links</label></li>
-                  <li>
-                    <label class="title-submenu">TATTOO INK ACCESSORIES</label>
-                  </li>
-                  <li><label>Ink Cups</label></li>
-                  <li><label>Holders</label></li>
-                  <li><label>Tools</label></li>
-                  <li>
-                    <label class="title-submenu"
-                      >TATTOO STENCILS & TRANSFERS</label
-                    >
-                  </li>
-                  <li><label>Image Carrier</label></li>
-                  <li><label> Stencil & Transfer Paper </label></li>
-                </ul>
               </li>
-
+              <ul class="sub-menu level-2">
+                <li><label class="submenu-deals">New Arrivals</label></li>
+                <li><label class="submenu-deals">% ON SALE</label></li>
+                <li>
+                  <label class="submenu-deals">VIEW ALL TATTOO SUPPLIES</label>
+                </li>
+                <li><label class="title-submenu">TATTOO NEEDLES</label></li>
+                <li><label>Cartridge Neddles</label></li>
+                <li><label>Traditional Needles</label></li>
+                <li><label>Needles by Brand</label></li>
+                <li><label>Shop By Needle Grouping</label></li>
+                <li><label class="title-submenu">TATTOO INK</label></li>
+                <li><label>Intenze Ink</label></li>
+                <li><label>Eternal Ink</label></li>
+                <li><label>Dynamic Tattoo Ink</label></li>
+                <li><label>World Famous Tattoo Ink</label></li>
+                <li><label>Fusion Ink</label></li>
+                <li><label>StarBrite by Tommy's</label></li>
+                <li><label>Solid Ink</label></li>
+                <li><label>Empire links</label></li>
+                <li><label>Silverback Ink</label></li>
+                <li><label>All links</label></li>
+                <li>
+                  <label class="title-submenu">TATTOO INK ACCESSORIES</label>
+                </li>
+                <li><label>Ink Cups</label></li>
+                <li><label>Holders</label></li>
+                <li><label>Tools</label></li>
+                <li>
+                  <label class="title-submenu"
+                    >TATTOO STENCILS & TRANSFERS</label
+                  >
+                </li>
+                <li><label>Image Carrier</label></li>
+                <li><label> Stencil & Transfer Paper </label></li>
+              </ul>
               <li class="menu-item-4">
                 Medical <i class="fa-solid fa-chevron-down fa-2xs"></i>
               </li>
@@ -280,96 +278,128 @@
       <div class="title-header">
         <h3 class="title-header">New Products</h3>
       </div>
-      <div class="new-products-grid swiper-container">
-        <div class="swiper-wrapper">
-          <div class="new-products-card swiper-slide">
-            <img
-              class="new-product-img"
-              src="/img/new-products-1.png"
-              alt="New product"
-            /><br />
-            <p class="product-price">$449.99</p>
-            <br />
-            <p class="product-description">Rook Quill Tattoo Machine</p>
-            <div class="icons-mobile-new-products">
-              <p class="cart-shopping-mobile">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </p>
-              <p class="heart-shopping-mobile">
-                <i class="fa-regular fa-heart fa-xl"></i>
-              </p>
+      <div class="new-products-grid">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="new-products-card">
+                <img
+                  class="new-product-img"
+                  src="img/new-products-1.png"
+                  alt="New product"
+                />
+                <p class="product-price">$449.99</p>
+                <br />
+                <p class="product-description">Rook Quill Tattoo Machine</p>
+                <div class="icons-mobile-new-products">
+                  <p class="cart-shopping-mobile">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </p>
+                  <p class="heart-shopping-mobile">
+                    <i class="fa-regular fa-heart fa-xl"></i>
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="new-products-card swiper-slide">
-            <img
-              class="new-product-img"
-              src="img/new-products-2.png"
-              alt="New product"
-            />
-            <p class="product-price">$449.99</p>
-            <br />
-            <p class="product-description">Rook Quill Tattoo Machine</p>
-            <div class="icons-mobile-new-products">
-              <p class="cart-shopping-mobile">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </p>
-              <p class="heart-shopping-mobile">
-                <i class="fa-regular fa-heart fa-xl"></i>
-              </p>
+            <div class="swiper-slide">
+              <div class="new-products-card">
+                <img
+                  class="new-product-img"
+                  src="img/new-products-2.png"
+                  alt="New product"
+                />
+                <p class="product-price">$449.99</p>
+                <br />
+                <p class="product-description">Rook Quill Tattoo Machine</p>
+                <div class="icons-mobile-new-products">
+                  <p class="cart-shopping-mobile">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </p>
+                  <p class="heart-shopping-mobile">
+                    <i class="fa-regular fa-heart fa-xl"></i>
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="new-products-card swiper-slide">
-            <img
-              class="new-product-img"
-              src="img/new-products-3.png"
-              alt="New product"
-            />
-            <p class="product-price">$449.99</p>
-            <br />
-            <p class="product-description">Rook Quill Tattoo Machine</p>
-            <div class="icons-mobile-new-products">
-              <p class="cart-shopping-mobile">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </p>
-              <p class="heart-shopping-mobile">
-                <i class="fa-regular fa-heart fa-xl"></i>
-              </p>
+            <div class="swiper-slide">
+              <div class="new-products-card">
+                <img
+                  class="new-product-img"
+                  src="img/new-products-3.png"
+                  alt="New product"
+                />
+                <p class="product-price">$449.99</p>
+                <br />
+                <p class="product-description">Rook Quill Tattoo Machine</p>
+                <div class="icons-mobile-new-products">
+                  <p class="cart-shopping-mobile">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </p>
+                  <p class="heart-shopping-mobile">
+                    <i class="fa-regular fa-heart fa-xl"></i>
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="new-products-card swiper-slide">
-            <img
-              class="new-product-img"
-              src="img/new-products-4.png"
-              alt="New product"
-            />
-            <p class="product-price">$449.99</p>
-            <br />
-            <p class="product-description">Rook Quill Tattoo Machine</p>
-            <div class="icons-mobile-new-products">
-              <p class="cart-shopping-mobile">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </p>
-              <p class="heart-shopping-mobile">
-                <i class="fa-regular fa-heart fa-xl"></i>
-              </p>
+            <div class="swiper-slide">
+              <div class="new-products-card">
+                <img
+                  class="new-product-img"
+                  src="img/new-products-4.png"
+                  alt="New product"
+                />
+                <p class="product-price">$449.99</p>
+                <br />
+                <p class="product-description">Rook Quill Tattoo Machine</p>
+                <div class="icons-mobile-new-products">
+                  <p class="cart-shopping-mobile">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </p>
+                  <p class="heart-shopping-mobile">
+                    <i class="fa-regular fa-heart fa-xl"></i>
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="new-products-card swiper-slide">
-            <img
-              class="new-product-img"
-              src="img/new-products-4.png"
-              alt="New product"
-            />
-            <p class="product-price">$449.99</p>
-            <br />
-            <p class="product-description">Rook Quill Tattoo Machine</p>
-            <div class="icons-mobile-new-products">
-              <p class="cart-shopping-mobile">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </p>
-              <p class="heart-shopping-mobile">
-                <i class="fa-regular fa-heart fa-xl"></i>
-              </p>
+            <div class="swiper-slide">
+              <div class="new-products-card">
+                <img
+                  class="new-product-img"
+                  src="img/new-products-4.png"
+                  alt="New product"
+                />
+                <p class="product-price">$449.99</p>
+                <br />
+                <p class="product-description">Rook Quill Tattoo Machine</p>
+                <div class="icons-mobile-new-products">
+                  <p class="cart-shopping-mobile">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </p>
+                  <p class="heart-shopping-mobile">
+                    <i class="fa-regular fa-heart fa-xl"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="new-products-card">
+                <img
+                  class="new-product-img"
+                  src="img/new-products-4.png"
+                  alt="New product"
+                />
+                <p class="product-price">$449.99</p>
+                <br />
+                <p class="product-description">Rook Quill Tattoo Machine</p>
+                <div class="icons-mobile-new-products">
+                  <p class="cart-shopping-mobile">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </p>
+                  <p class="heart-shopping-mobile">
+                    <i class="fa-regular fa-heart fa-xl"></i>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="swiper-button-next"></div>

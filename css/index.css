@@ -29,11 +29,14 @@ li.menu-item-8.extra,
 .cart-shopping-mobile,
 .heart-shopping-mobile,
 .swiper-button-prev,
-.swiper-button-next, .social-media-icons, .sub-menu.level-2 {
+.swiper-button-next,
+.social-media-icons,
+.sub-menu.level-2 {
   display: none;
 }
-a{
+.megamenu-list li[class*="menu-item"] a {
   text-decoration: none;
+  color: #575757;
 }
 /*utilities*/
 .background-gray {
@@ -443,11 +446,11 @@ img.community-img {
   justify-content: left;
   margin-left: 20px;
   margin-bottom: 20px;
-  height: 552px;
+  height: 465px;
   width: 100%;
   align-items: center;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  /* overflow-x: scroll; */
+  /* overflow-y: hidden; */
   margin: 0 auto;
   max-width: 1360px;
 }
@@ -703,4 +706,29 @@ footer .lower-footer {
   letter-spacing: 0;
   line-height: 20px 0;
   text-align: center;
+}
+/*swipper*/
+
+.sip-slider,
+.swiper-container,
+.swiper-wrapper,
+.swiper-slide,
+.swiper-slide img {
+  transition-duration: 100ms !important;
+  transition-timing-function: linear;
+}
+
+.swiper-container{
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+}
+.swiper-container .swiper-button-prev{
+  left: -40px;
+}
+.swiper-container .swiper-button-next{
+  right: -40px;
+}
+.swiper-container .swiper-pagination{
+  bottom: 0px!important;
 }

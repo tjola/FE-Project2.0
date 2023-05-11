@@ -5,26 +5,38 @@ document.addEventListener("DOMContentLoaded", function () {
     barsIcon.classList.toggle("active");
     megamenuList.classList.toggle("active");
     this.parentNode.appendChild(megamenuList);
+
+    const chevronIcons = document.querySelectorAll(".megamenu-list i.fa-chevron-down");
+    chevronIcons.forEach(function(icon) {
+      if (megamenuList.classList.contains("active")) {
+        icon.classList.remove("fa-chevron-down");
+        icon.classList.add("fa-chevron-right");
+      } else {
+        icon.classList.remove("fa-chevron-right");
+        icon.classList.add("fa-chevron-down");
+      }
+    });
   });
 });
+
 document.addEventListener("DOMContentLoaded", function () {
   const megamenu = document.querySelector(".megamenu");
   const barsIcon = document.querySelector(".fa-bars");
-  const chevrons = document.querySelector(".fa-chevron-down");
   const mobileHeader = document.querySelector(".page-titles-list");
   const overlayMobile = document.querySelector(".overlay");
   const linkSelected = document.querySelector(".menu-item-3 .nested");
   const tattoLink = document.querySelector(".menu-item-3");
   const nestedMenu = document.querySelector(".sub-menu.level-2");
+
   linkSelected.addEventListener("click", function () {
     nestedMenu.classList.toggle("active");
     tattoLink.classList.toggle("active");
-    if (tattoLink.classList.contains("active")) {
-      chevrons.classList.remove("fa-chevron-down");
-      chevrons.classList.add("fa-chevron-right");
-    } else {
-      console.log(99);
-    }
+    // if (tattoLink.classList.contains("active")) {
+    //   chevrons.classList.remove("fa-chevron-down");
+    //   chevrons.classList.add("fa-chevron-right");
+    // } else {
+    //   console.log(99);
+    // }
   });
 
   barsIcon.addEventListener("click", function () {
@@ -44,4 +56,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }, 300);
   });
+
 });
+
+
+

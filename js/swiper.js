@@ -1,5 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
   loop: true,
+  dynamicBullets: true,
   keyboard: {
     enabled: true,
  },
@@ -18,7 +19,7 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
       slidesPerGroupAuto: true,
       centerInsufficientSlides: true,
-
+      dynamicBullets: true,
       navigation: {
         enabled: true,
         nextEl: ".swiper-button-next",
@@ -45,7 +46,7 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
       slidesPerGroupAuto: true,
       centerInsufficientSlides: true,
-
+      dynamicBullets: true,
       navigation: {
         enabled: true,
         nextEl: ".swiper-button-next",
@@ -59,7 +60,7 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
       slidesPerGroupAuto: true,
       centerInsufficientSlides: true,
-
+      dynamicBullets: true,
       navigation: {
         enabled: true,
         nextEl: ".swiper-button-next",

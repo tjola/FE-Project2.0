@@ -1,3 +1,5 @@
+//Menu js for
+
 document.addEventListener("DOMContentLoaded", function () {
   const barsIcon = document.querySelector(".fa-bars");
   barsIcon.addEventListener("click", function () {
@@ -27,16 +29,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const linkSelected = document.querySelector(".menu-item-3 .nested");
   const tattoLink = document.querySelector(".menu-item-3");
   const nestedMenu = document.querySelector(".sub-menu.level-2");
-
+  const chevronIcons = document.querySelectorAll(".megamenu-list i.fa-chevron-down");
   linkSelected.addEventListener("click", function () {
     nestedMenu.classList.toggle("active");
     tattoLink.classList.toggle("active");
-    // if (tattoLink.classList.contains("active")) {
-    //   chevrons.classList.remove("fa-chevron-down");
-    //   chevrons.classList.add("fa-chevron-right");
-    // } else {
-    //   console.log(99);
-    // }
+      chevronIcons.classList.remove("fa-chevron-down");
+      chevronIcons.classList.add("fa-chevron-right");
   });
 
   barsIcon.addEventListener("click", function () {

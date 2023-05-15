@@ -659,16 +659,32 @@ strong.supply-title {
   background: #fff;
   z-index: 99;
 }
-li.menu-item-3.active {
+li[class*="menu-item"] > a.active {
   background: #fff;
   position: absolute;
-  top: 55px;
+  top: -11px;
   right: 0;
-  left: 0;
+  left: 30px;
   margin: auto;
   z-index: 100;
   color: #282828;
   font-family: "Proxima Nova Semibold";
+}
+li .menu-item-2 > a.active{
+  background: #fff;
+  position: absolute;
+  top: -41px;
+  right: 0;
+  left: 15px;
+}
+li .menu-item-3 > a.active{
+  top: -85px;
+  right: 0;
+  left: 15px;
+}
+li .menu-item-4 > a.active{
+  top: -130px;
+  left: 15px;
 }
 ul.sub-menu.level-2.active li {
   max-width: fit-content;

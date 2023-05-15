@@ -55,7 +55,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 300);
   });
 
+  const links = document.querySelectorAll("ul.megamenu-list li a");
+  links.forEach((link) => {
+    link.addEventListener("click", function () {
+      link.classList.toggle("active");
+      if (link.classList.contains("active")) {
+        // nestedMenu.classList.toggle("active");
+      //   chevronIcons.classList.remove("fa-chevron-down");
+      //   chevronIcons.classList.add("fa-chevron-right");
+      // }else if(nestedMenu.classList.contains("active")){
+      //   nestedMenu.classList.remove("active");
+      }
+    });
+  });
 });
-
-
-

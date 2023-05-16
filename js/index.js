@@ -70,3 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
    iElement.className = 'fa-solid fa-chevron-left fa-2xs';
 });
 });
+/*i.fa-solid.fa-2sm.fa-chevron-left {
+  padding: 6px 0;
+}*/

@@ -6,7 +6,7 @@ header .lower-menu .megamenu {
   display: none;
 }
 /*utilities mobile*/
-header{
+header {
   border: none;
 }
 .background-gray {
@@ -14,7 +14,7 @@ header{
 }
 .title-header h3 {
   margin: 30px auto 0 auto !important;
-  padding: 20px !important;
+  padding: 0 !important;
 }
 .upper-menu {
   max-width: 480px;
@@ -24,7 +24,7 @@ header{
   flex-direction: column;
   margin: auto;
 }
-.hidden-element {
+.hidden-element {/*class to hide elements*/
   display: none;
 }
 header {
@@ -176,20 +176,6 @@ img.community-img {
   width: 100%;
 }
 
-.title-header {
-  text-transform: uppercase;
-  height: 26px;
-  max-width: 809px;
-  color: #000000;
-  font-family: "Proxima Nova Bold", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 26px;
-  text-align: center;
-  margin: auto;
-  padding-top: 0;
-}
 .title-header-reviews {
   text-transform: uppercase;
   height: 26px;
@@ -203,7 +189,6 @@ img.community-img {
   text-align: center;
   margin: auto;
 }
-
 .blog-post {
   display: flex;
   justify-content: center;
@@ -418,10 +403,6 @@ footer .upper-footer .width {
   width: 100%;
 }
 
-nav .m-menu ul li label.main-menu {
-  line-height: 42px;
-  font-weight: 600;
-}
 .fa-cart-shopping-mobile {
   display: flex;
   color: #ffffff;
@@ -648,8 +629,7 @@ strong.supply-title {
   padding-top: 30px;
   margin: auto 45px;
 }
-
-/*level 2 mobile menu: After clicking on Tattoo link*/
+/*level 2 mobile menu: After clicking on Tattoo link and other links */
 .sub-menu.level-2.active {
   display: flex;
   flex-direction: column;
@@ -658,33 +638,41 @@ strong.supply-title {
   position: absolute;
   background: #fff;
   z-index: 99;
+  left: 5px;
 }
-li[class*="menu-item"] > a.active {
+
+li .menu-item-2.active {
   background: #fff;
   position: absolute;
-  top: -11px;
+  top: 64px;
   right: 0;
-  left: 30px;
-  margin: auto;
-  z-index: 100;
-  color: #282828;
-  font-family: "Proxima Nova Semibold";
+  left: 0px;
 }
-li .menu-item-2 > a.active{
-  background: #fff;
-  position: absolute;
-  top: -41px;
+
+li .menu-item-3.active {
+  top: -80px;
   right: 0;
-  left: 15px;
+  left: 0px;
+  background-color: #fff;
 }
-li .menu-item-3 > a.active{
-  top: -85px;
+ul.sub-menu.level-2 li {
+  max-width: 200px;
+}
+li .menu-item-4.active {
+  top: -125px;
+  left: 0;
   right: 0;
-  left: 15px;
+  background-color: #fff;
 }
-li .menu-item-4 > a.active{
-  top: -130px;
-  left: 15px;
+li .menu-item-5.active {
+  top: -165px;
+  left: 0px;
+  background-color: #fff;
+}
+li .menu-item-6.active {
+  top: -205px;
+  left: 0px;
+  background-color: #fff;
 }
 ul.sub-menu.level-2.active li {
   max-width: fit-content;
@@ -700,7 +688,6 @@ ul.sub-menu.level-2.active li {
 ul li label {
   display: block;
   text-align: left;
-  padding: 0 15px;
   text-decoration: none;
   cursor: pointer;
   position: relative;
@@ -710,6 +697,17 @@ ul li label {
   font-size: 14px;
   letter-spacing: 0;
   line-height: 25px;
+  text-transform: capitalize;
+}
+li[class*="menu-item"].active .level-2 {
+  display: flex;
+  position: absolute;
+  left: 0;
+  flex-direction: column;
+  background: white;
+  z-index: 999;
+  padding-left: 20px;
+  top: 20px;
 }
 li label.submenu-deals {
   color: #407ec9;
@@ -720,6 +718,7 @@ li label.submenu-deals {
   line-height: 20px;
   text-decoration: underline 1px solid #e8e8e8;
   text-underline-offset: 8px;
+  text-transform: uppercase;
 }
 li label.title-submenu {
   color: #282828;
@@ -730,16 +729,17 @@ li label.title-submenu {
   line-height: 17px;
   text-decoration: underline 1px solid #e8e8e8;
   text-underline-offset: 8px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
 }
 .search-bar .fa-magnifying-glass {
   display: block;
   color: black;
-  /* width: 27px; */
   padding: 10px;
 }
 /*mobile menu header, media query 400px ne menyre qe te jete me responsive dhe teksti tek titulli i menu te jete i qarte dhe i kuptueshem*/
 
-@media screen and (max-width:420px) {
+@media screen and (max-width: 420px) {
   ul.page-titles-list.active {
     height: 100vh;
     display: block;
@@ -749,9 +749,9 @@ li label.title-submenu {
     background-color: #fff;
     width: 100%;
     content: "";
-}
-.upper-menu .page-titles .page-titles-list li.wholesale-pros-only{
-  color: #407ec9;
+  }
+  .upper-menu .page-titles .page-titles-list li.wholesale-pros-only {
+    color: #407ec9;
     font-family: "Proxima Nova Medium";
     font-size: 12px;
     font-weight: 500;
@@ -763,23 +763,26 @@ li label.title-submenu {
     height: 62px;
     max-width: 130px !important;
     border-top: 3px solid #407ec9;
+  }
+  .upper-menu .page-titles .page-titles-list li.retail {
+    height: 62px;
+    max-width: 140px !important;
+    color: #282828;
+    font-family: "Proxima Nova Semibold";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 17px;
+    margin: 0 auto;
+    padding-top: 23px;
+    background-color: #eee !important;
+    text-align: center;
+  }
+  .sub-menu.level-2.active {
+    width: 90%;
+    height: calc(100vh - 50px);
+  }
 }
-.upper-menu .page-titles .page-titles-list li.retail {
-  height: 62px;
-  max-width: 140px !important;
-  color: #282828;
-  font-family: "Proxima Nova Semibold";
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 17px;
-  margin: 0 auto;
-  padding-top: 23px;
-  background-color: #eee !important;
-  text-align: center;
-}
-.sub-menu.level-2.active {
-  width: 90%;
-  height: calc(100vh - 50px);
-}
-}
+
+
+

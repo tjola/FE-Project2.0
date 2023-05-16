@@ -1,5 +1,3 @@
-//Menu js for
-
 document.addEventListener("DOMContentLoaded", function () {
   const barsIcon = document.querySelector(".fa-bars");
   barsIcon.addEventListener("click", function () {
@@ -8,8 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
     megamenuList.classList.toggle("active");
     this.parentNode.appendChild(megamenuList);
 
-    const chevronIcons = document.querySelectorAll(".megamenu-list i.fa-chevron-down");
-    chevronIcons.forEach(function(icon) {
+    const chevronIcons = document.querySelectorAll(
+      ".megamenu-list i.fa-chevron-down"
+    );
+    chevronIcons.forEach(function (icon) {
       if (megamenuList.classList.contains("active")) {
         icon.classList.remove("fa-chevron-down");
         icon.classList.add("fa-chevron-right");
@@ -26,17 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const barsIcon = document.querySelector(".fa-bars");
   const mobileHeader = document.querySelector(".page-titles-list");
   const overlayMobile = document.querySelector(".overlay");
-  const linkSelected = document.querySelector(".menu-item-3 .nested");
   const tattoLink = document.querySelector(".menu-item-3");
-  const nestedMenu = document.querySelector(".sub-menu.level-2");
-  const chevronIcons = document.querySelectorAll(".megamenu-list i.fa-chevron-down");
-  linkSelected.addEventListener("click", function () {
-    nestedMenu.classList.toggle("active");
-    tattoLink.classList.toggle("active");
-      chevronIcons.classList.remove("fa-chevron-down");
-      chevronIcons.classList.add("fa-chevron-right");
-  });
-
+  
   barsIcon.addEventListener("click", function () {
     megamenu.classList.toggle("active");
     mobileHeader.classList.toggle("active");
@@ -50,21 +41,18 @@ document.addEventListener("DOMContentLoaded", function () {
         barsIcon.classList.remove("fa-xmark");
         barsIcon.classList.add("fa-bars");
         tattoLink.classList.remove("active");
-        nestedMenu.classList.remove("active");
       }
     }, 300);
   });
 
-  const links = document.querySelectorAll("ul.megamenu-list li a");
+  const links = document.querySelectorAll("ul.megamenu-list li");
   links.forEach((link) => {
     link.addEventListener("click", function () {
       link.classList.toggle("active");
       if (link.classList.contains("active")) {
-        // nestedMenu.classList.toggle("active");
-      //   chevronIcons.classList.remove("fa-chevron-down");
-      //   chevronIcons.classList.add("fa-chevron-right");
-      // }else if(nestedMenu.classList.contains("active")){
-      //   nestedMenu.classList.remove("active");
+       
+      } else if (!link.classList.contains("active")) {
+        link.classList.remove("active");
       }
     });
   });

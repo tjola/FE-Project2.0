@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobileHeader = document.querySelector(".page-titles-list");
   const overlayMobile = document.querySelector(".overlay");
   const tattoLink = document.querySelector(".menu-item-3");
-  
+
   barsIcon.addEventListener("click", function () {
     megamenu.classList.toggle("active");
     mobileHeader.classList.toggle("active");
@@ -46,14 +46,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const links = document.querySelectorAll("ul.megamenu-list li");
+  const activeChevron = document.querySelectorAll("i.fa-chevron-right::before");
   links.forEach((link) => {
     link.addEventListener("click", function () {
       link.classList.toggle("active");
       if (link.classList.contains("active")) {
-       
+        console.log(activeChevron)
+        // activeChevron.classList.remove("fa-chevron-right");
+        // activeChevron.classList.add("fa-chevron-left");
+        // activeChevron.classList.add("active");
+        console.log(activeChevron);
       } else if (!link.classList.contains("active")) {
         link.classList.remove("active");
+        // activeChevron.classList.remove("active");
+        // activeChevron.classList.remove("fa-chevron-left");
+        // activeChevron.classList.add("fa-chevron-right");
       }
     });
   });
+  const liElements = document.querySelectorAll('a > i.fa-chevron-right');
+ liElements.forEach(li => {
+   const iElement = li.querySelector('i');
+   iElement.className = 'fa-solid fa-chevron-left fa-2xs';
+});
 });

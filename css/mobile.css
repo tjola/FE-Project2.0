@@ -640,39 +640,62 @@ strong.supply-title {
   z-index: 99;
   left: 5px;
 }
-
+ul.sub-menu.level-2 li {
+  max-width: 200px;
+}
+i.fa-solid.fa-2xs.fa-chevron-right {
+  padding: 14px 0;
+}
+i.fa-solid.fa-2xs.fa-chevron-left {
+  padding: 14px 0;
+}
+li .menu-item-1.active {
+  background: #fff;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  left: 0px;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
 li .menu-item-2.active {
   background: #fff;
   position: absolute;
   top: 64px;
   right: 0;
   left: 0px;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
 }
-
 li .menu-item-3.active {
-  top: -80px;
+  top: -100px;
   right: 0;
   left: 0px;
   background-color: #fff;
-}
-ul.sub-menu.level-2 li {
-  max-width: 200px;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
 }
 li .menu-item-4.active {
   top: -125px;
   left: 0;
   right: 0;
   background-color: #fff;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
 }
 li .menu-item-5.active {
   top: -165px;
   left: 0px;
   background-color: #fff;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
 }
 li .menu-item-6.active {
   top: -205px;
   left: 0px;
   background-color: #fff;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
 }
 ul.sub-menu.level-2.active li {
   max-width: fit-content;
@@ -684,6 +707,8 @@ ul.sub-menu.level-2.active li {
   margin: auto;
   padding: 4px;
   z-index: 99;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
 }
 ul li label {
   display: block;
